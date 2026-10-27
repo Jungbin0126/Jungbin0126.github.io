@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Giant kelp, warming, and dissolved oxygen · Jungbin Yoon</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Jungbin Yoon — student researcher at The Thacher School.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap">
+<header class="site"><a class="brand" href="index.html">Jungbin Yoon<small>THE THACHER SCHOOL · CLASS OF 2027</small></a><nav class="site" aria-label="Main"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="beekeeping.html">Beekeeping</a><a href="diving.html">Underwater</a><a href="drawings.html">Art</a><a href="about.html">About</a><a href="github.html">GitHub</a></nav></header>
+<main>
+
+<p><a href="research.html">← All research</a></p>
+<div class="eyebrow">Environmental data science · May–Dec 2025</div>
+<h1 class="paper">Lagged Giant Kelp Canopy Response to Warming and Dissolved Oxygen in the Southern California Channel Islands</h1>
+<p class="status">Published · International Journal of High School Research, Nov 2026</p>
+<p class="lede">I've dived in the Channel Islands kelp forests, so I wanted to know what happens to them when the water warms. Using 35 years of public ocean and satellite data, I found that the kelp canopy shrinks about one season after a warm spell, not right away.</p>
+<figure class="paper-fig"><img src="images/research/kelp-canopy.png" alt="Kelp canopy area in the Channel Islands, by quarter, 1990–2024. Big swings from year to year, with a slow decline." loading="lazy"><figcaption>Kelp canopy area in the Channel Islands, by quarter, 1990–2024. Big swings from year to year, with a slow decline.</figcaption></figure>
+<h2>The project</h2>
+<p>This project came out of diving in the Channel Islands, where I got interested in giant kelp. Giant kelp forests are some of the most productive ecosystems on the coast, and they have become more fragile as the ocean warms. Warmer water also tends to hold less dissolved oxygen, which could add to the stress.</p><p>I combined public datasets on sea surface temperature, coastal upwelling, dissolved oxygen, and kelp canopy area for the five northern Channel Islands from 1990 to 2024, aggregated to quarters. I tested long-term trends, the link between temperature and oxygen, and whether kelp responds to warming right away or after a delay.</p>
+<p class="tools">Built with R / RStudio · public ocean and satellite kelp-canopy data.</p>
+<figure class="paper-fig"><img src="images/research/kelp-lag.png" alt="Kelp canopy against sea surface temperature at different lags. The clearest negative relationship shows up when temperature leads the canopy by one quarter (panel B)." loading="lazy"><figcaption>Kelp canopy against sea surface temperature at different lags. The clearest negative relationship shows up when temperature leads the canopy by one quarter (panel B).</figcaption></figure>
+<h2>What I found</h2>
+<ul class="findings"><li>Sea surface temperature rose steadily over the 35 years; upwelling varied a lot but showed no clear long-term trend.</li><li>Warmer quarters had lower dissolved oxygen.</li><li>Kelp canopy declined most strongly about one quarter after warm conditions, not in the same quarter (β = −10.187, R² = 0.237, p = 1.25 × 10⁻⁹).</li><li>After accounting for temperature, higher oxygen was still linked to more kelp canopy.</li></ul>
+<p class="actions"><a class="btn" href="papers/research-1.pdf" target="_blank" rel="noopener">Read the full paper (PDF)</a> <a href="https://github.com/Jungbin0126/kelp-climate-dynamics" target="_blank" rel="noopener">Code on GitHub ↗</a></p>
+
+</main>
+<footer class="site"><span>© 2026 Jungbin Yoon</span><span><a href="https://github.com/Jungbin0126">github.com/Jungbin0126</a></span></footer>
+</div>
+</body></html>

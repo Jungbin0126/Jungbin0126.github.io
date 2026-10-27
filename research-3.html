@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mutated DNA motif detection · Jungbin Yoon</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Jungbin Yoon — student researcher at The Thacher School.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap">
+<header class="site"><a class="brand" href="index.html">Jungbin Yoon<small>THE THACHER SCHOOL · CLASS OF 2027</small></a><nav class="site" aria-label="Main"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="beekeeping.html">Beekeeping</a><a href="diving.html">Underwater</a><a href="drawings.html">Art</a><a href="about.html">About</a><a href="github.html">GitHub</a></nav></header>
+<main>
+
+<p><a href="research.html">← All research</a></p>
+<div class="eyebrow">Computational biology · Jun 2026 – present</div>
+<h1 class="paper">Detecting Mutated DNA Motifs: Hamming-Distance Matching Versus k-mer Machine Learning Models</h1>
+<p class="status">Submitted · Columbia Junior Science Journal</p>
+<p class="lede">Can machine learning find a DNA motif better than a simple mismatch count once the motif starts to mutate? I ran 180 simulated datasets to find out. Once mutations were in the picture, the simple method won every time.</p>
+<figure class="paper-fig"><img src="images/research/dna-design.png" alt="How the experiment works: plant a mutated copy of a 12-letter motif in random DNA, then test each method on the same held-out sequences." loading="lazy"><figcaption>How the experiment works: plant a mutated copy of a 12-letter motif in random DNA, then test each method on the same held-out sequences.</figcaption></figure>
+<h2>The project</h2>
+<p>DNA motifs are short patterns where proteins bind to control genes, but real binding sites rarely match the motif exactly. On the advice of Dr. Phillip Compeau, computational biology faculty at Carnegie Mellon, I studied bioinformatics through Rosalind and <i>Bioinformatics Algorithms</i>, and this project grew out of those problems. It asks whether machine learning finds mutated motifs better than classical matching as mutation rates rise.</p><p>I generated 180 synthetic datasets of 1,000 random 100-nucleotide sequences, planting a 12-nucleotide motif mutated at rates from 0% to 50%. I compared exact matching, Hamming-distance matching, logistic regression and random forests on k-mer counts, and a convolutional neural network on the same held-out test sequences.</p>
+<p class="tools">Built with Python · scikit-learn · CNN.</p>
+<figure class="paper-fig"><img src="images/research/dna-accuracy.png" alt="Accuracy as the mutation rate rises. Hamming-distance matching (orange) stays on top, and its accuracy follows the theoretical prediction (dashed)." loading="lazy"><figcaption>Accuracy as the mutation rate rises. Hamming-distance matching (orange) stays on top, and its accuracy follows the theoretical prediction (dashed).</figcaption></figure>
+<h2>What I found</h2>
+<ul class="findings"><li>Exact matching was perfect with no mutations but fell to 0.635 accuracy at a 10% mutation rate.</li><li>Hamming-distance matching was the most accurate method at every nonzero mutation rate (0.969 at 10%, 0.739 at 30%).</li><li>Longer k-mers and a CNN narrowed the gap but did not close it. The limit was how sequences were represented, not the classifier.</li><li>A probability model predicted the classical methods' accuracy to within 0.009.</li></ul>
+<p class="actions"><a class="btn" href="papers/research-3.pdf" target="_blank" rel="noopener">Read the full paper (PDF)</a> <a href="https://github.com/Jungbin0126/rosalind-ml-motif-detection" target="_blank" rel="noopener">Code on GitHub ↗</a></p>
+
+</main>
+<footer class="site"><span>© 2026 Jungbin Yoon</span><span><a href="https://github.com/Jungbin0126">github.com/Jungbin0126</a></span></footer>
+</div>
+</body></html>

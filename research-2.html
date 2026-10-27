@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wildlife roadkill and habitat connectivity · Jungbin Yoon</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Jungbin Yoon — student researcher at The Thacher School.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap">
+<header class="site"><a class="brand" href="index.html">Jungbin Yoon<small>THE THACHER SCHOOL · CLASS OF 2027</small></a><nav class="site" aria-label="Main"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="beekeeping.html">Beekeeping</a><a href="diving.html">Underwater</a><a href="drawings.html">Art</a><a href="about.html">About</a><a href="github.html">GitHub</a></nav></header>
+<main>
+
+<p><a href="research.html">← All research</a></p>
+<div class="eyebrow">Geospatial ecology · Sep 2025 – May 2026</div>
+<h1 class="paper">Identifying Habitat Connectivity Gaps Using Wildlife Roadkill Patterns in Ventura County, California</h1>
+<p class="status">Selected for publication · Journal of Emerging Investigators</p>
+<p class="lede">Where do animals get hit crossing roads in Ventura County, and what does that say about where their habitat is cut off? I mapped roadkill reports against land cover and the road network to find the spots where wildlife and traffic meet.</p>
+<figure class="paper-fig"><img src="images/research/roadkill-landcover.png" alt="Land cover in Ventura County (NLCD 2021). Development and farmland sit in the south; the north is mostly forest and shrubland." loading="lazy"><figcaption>Land cover in Ventura County (NLCD 2021). Development and farmland sit in the south; the north is mostly forest and shrubland.</figcaption></figure>
+<h2>The project</h2>
+<p>Roads break up habitat. They block animals from moving between patches and kill them in collisions. Knowing where those collisions happen can show where connectivity is broken and where wildlife crossings or other fixes would help most.</p><p>I mapped iNaturalist roadkill reports from 2020 to 2024 against land cover, protected areas, and the road network in Ventura County. I used kernel density estimation to look for clusters and compared each report's distance to the nearest road with randomly placed points.</p>
+<p class="tools">Built with R · QGIS · iNaturalist, land cover, and road network data.</p>
+<figure class="paper-fig"><img src="images/research/roadkill-kde.png" alt="Exploratory density map of roadkill reports. Reports cluster in the southern and central county, near major roads." loading="lazy"><figcaption>Exploratory density map of roadkill reports. Reports cluster in the southern and central county, near major roads.</figcaption></figure>
+<h2>What I found</h2>
+<ul class="findings"><li>Roadkill reports clustered in the southern and central parts of the county, near major road corridors and developed areas.</li><li>The northern county, with few roads, showed almost no reports.</li><li>With 13 observations, the results are exploratory, and citizen-science reports are biased toward places people drive.</li></ul>
+<p class="actions"><a class="btn" href="papers/research-2.pdf" target="_blank" rel="noopener">Read the full paper (PDF)</a> <a href="https://github.com/Jungbin0126/ventura-habitat-connectivity" target="_blank" rel="noopener">Code on GitHub ↗</a></p>
+
+</main>
+<footer class="site"><span>© 2026 Jungbin Yoon</span><span><a href="https://github.com/Jungbin0126">github.com/Jungbin0126</a></span></footer>
+</div>
+</body></html>
